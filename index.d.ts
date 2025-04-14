@@ -5,7 +5,7 @@ declare namespace Mousetrap {
 
 	interface MousetrapStatic {
 		(el?: Element): MousetrapInstance;
-		new (el?: Element): MousetrapInstance;
+		new (el?: Element, useCapture?: boolean): MousetrapInstance;
 		addKeycodes(keycodes: { [key: number]: string }): void;
 		stopCallback: (
 			e: ExtendedKeyboardEvent,
